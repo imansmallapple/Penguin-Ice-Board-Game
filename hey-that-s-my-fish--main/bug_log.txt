@@ -1,0 +1,36 @@
+BUG LOG:
+
+(FIXED)-14/11/2021 - users can input negative numbers as the board size and number of penguins per player,
+[FIX]: added checks for the number's sign and loops that allow users to make corrections
+
+(FIXED)-16/11/2021 - board generation not working, need to add additional checks for the declaration of placement coordinates
+[FIX]: added board generation, the board is generated randomly, added checks for placement coordinates and loops allowing for correction on the user's side
+
+(FIXED)-21/11/2021 - the game sometime hangs while performing checks,
+[FIX]: the program would try to check tiles outside of the board's limits, coded a function isSafe which checks if the tile which is about to be checked is within the boundarie
+
+(FIXED)-23/11/2021 - while checking for possible movements for the chosen penguin, the game sometimes does not recognize valid moves
+[FIX]: the functions structure made checks exclusive e.g. after checking the space above the penguin the program would not check any other squares, changed the check structure 
+
+(FIXED)-30/11/2021 - the game sometimes allows users to move to a square occupied by a different penguin,
+[FIX]: some of the checks would take invalid numbers and check for them, fixed the values
+
+(FIXED)-01/12/2021 - the game will not enter some parts of the while loops,
+[FIX]: changed '=' to '==' in some places (nice job)
+
+-04/12/2021 - rewrote the main function to utilise the GameState structure more efficiently
+
+(FIXED)-05/12/2021 - the game will end immediately and will not wait for the user to exit after displaying scores,
+[FIX]: changed the switch...case responsible for awaiting user input
+
+-(FIXED)17/12/2021 - the board does not generate fully sometimes,
+[FIX]: rewrote parts of the gen_board() function, it would input wrong values into the board array, fixed the range on the random generator
+
+-03/01/2022 - rewrote the code for clarity, especially in the main.c file
+
+-(FIXED)09/01/2022 - the game still hangs sometimes during the movement phase,
+[FIX]: rewrote the is_move_available_chosen_pen() function in gamelogic.c to perform correct checks on all sides of the chosen penguin, previously checks to the right of the penguin would not register for the tile value of 20 
+
+- 24/01/2022 - some cosmetic changes to the main menu (added a cute penguin) ((game fixed by the penguin)),
+rewrote some parts of the communication with user to be more clear and straigh-forward
+
