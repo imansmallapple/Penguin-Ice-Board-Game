@@ -1,6 +1,6 @@
 # Penguin Game
 This is the readme file for **penguin game** for **team 07** .
-This project involved the implementation of a Penguin ice board game in the C programming language. It was a group project for the EPFU subject at WUT, demonstrating my ability to work effectively in a team. The project was managed using Git and GitHub, showcasing my proficiency in version control systems. 
+The project involved the implementation of a Penguin ice board game in the C programming language. It was a group project for the EPFU subject at WUT, demonstrating my ability to work effectively in a team. The project was managed using Git and GitHub, showcasing my proficiency in version control systems. 
 Current file structure is defined below :
 ___
 ### File Structure
